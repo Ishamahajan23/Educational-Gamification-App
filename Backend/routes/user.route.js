@@ -40,35 +40,40 @@ userRoute.post("/signup", async (req, res) => {
 userRoute.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({
+        message: "Email and password are required",
+      });
+    }
+
+
     let user = await userModel.findOne({ email });
     if (!user) {
       return res.status(404).json({
         message: "user not found",
       });
     }
-
-    let hash = user.password;
-    bcrypt.compare(password, hash, function (err, result) {
-      if (result) {
-        var token = jwt.sign(
-          {
-            userId: user._id,
-            email: user.email,
-          },
-          process.env.JWT_SECRET_KEY
-        );
-
-        res.status(200).json({
-          message: "login successful",
-          access_token: token,
-        });
-      } else {
-        res.status(500).json({
-          message: "login failed",
-        });
-      }
-    });
+    const result = await bcrypt.compare(password, user.password);
+    if (result) {
+      var token = jwt.sign(
+        {
+          userId: user._id,
+          email: user.email,
+        },
+        process.env.JWT_SECRET_KEY
+      );
+      res.status(200).json({
+        message: "login successful",
+        access_token: token,
+      });
+    } else {
+      res.status(401).json({
+        message: "Invalid credentials",
+      });
+    }
   } catch (err) {
+    console.error("Login error:", err);
     res.status(500).json({
       message: "something went wrong",
       err: err.message,
@@ -76,29 +81,7 @@ userRoute.post("/login", async (req, res) => {
   }
 });
 
-// userRoute.get("/users", async (req, res) => {
-//   try {
-//     if (!req.headers.authorization) {
-//       return res.status(401).json({
-//         message: "Authorization header missing",
-//       });
-//     }
 
-//     let token = req.headers.authorization.split(" ")[1];
-//     var decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
-
-//     res.status(200).json({
-//       message: "users successful",
-//       userId: decoded.userId,
-//       email: decoded.email,
-//     });
-//   } catch (err) {
-//     res.status(500).json({
-//       message: "something went wrong",
-//       err: err.message,
-//     });
-//   }
-// });
 
 userRoute.post("/forgot-password", async (req, res) => {
   try {
@@ -129,7 +112,7 @@ userRoute.post("/forgot-password", async (req, res) => {
       },
     });
     const resetURL = `${
-      process.env.FRONTEND_URL || "http://localhost:3000"
+      process.env.FRONTEND_URL || "http://localhost:5173"
     }/user/reset-password/${resetToken}`;
 
     const mailOptions = {
@@ -149,7 +132,6 @@ userRoute.post("/forgot-password", async (req, res) => {
         <p>Best regards,<br>Your App Team</p>
       `,
     };
-
 
     await transporter.sendMail(mailOptions);
 
