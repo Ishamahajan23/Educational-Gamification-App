@@ -13,13 +13,16 @@ const Setting = () => {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:3000/user/forgot-password", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: forgotPasswordEmail }),
-      });
+      const response = await fetch(
+        "https://educational-gamification-app.onrender.com/user/forgot-password",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: forgotPasswordEmail }),
+        }
+      );
 
       const data = await response.json();
 

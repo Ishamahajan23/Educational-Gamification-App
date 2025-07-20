@@ -35,7 +35,7 @@ const ResetPassword = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/user/reset-password/${token}`,
+        `https://educational-gamification-app.onrender.com/user/reset-password/${token}`,
         {
           method: "POST",
           headers: {
@@ -51,7 +51,6 @@ const ResetPassword = () => {
         setMessage("Password reset successful! Redirecting to login...");
         setNewPassword("");
         setConfirmPassword("");
-        // Redirect to login after 2 seconds
         setTimeout(() => {
           navigate("/login");
         }, 2000);
@@ -79,7 +78,6 @@ const ResetPassword = () => {
         </div>
 
         <div className="p-6">
-          {/* Alert Messages */}
           {message && (
             <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
               {message}

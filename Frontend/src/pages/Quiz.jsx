@@ -16,7 +16,9 @@ const Quiz = ({ subject = "General" }) => {
 
   async function fetchQuestions() {
     try {
-      const response = await fetch(`http://localhost:3000/quiz/${game}`);
+      const response = await fetch(
+        `https://educational-gamification-app.onrender.com/quiz/${game}`
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch questions");
       }
@@ -79,14 +81,17 @@ const Quiz = ({ subject = "General" }) => {
 
   const updatePoints = async (newScore) => {
     try {
-      const response = await fetch(`http://localhost:3000/user-status/points`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify({ points: newScore, operation: "add" }),
-      });
+      const response = await fetch(
+        `https://educational-gamification-app.onrender.com/user-status/points`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+          body: JSON.stringify({ points: newScore, operation: "add" }),
+        }
+      );
       console.log("Points updated:", newScore);
       if (!response.ok) {
         throw new Error("Failed to update points");
@@ -100,14 +105,17 @@ const Quiz = ({ subject = "General" }) => {
 
   const updateBadges = async (badges) => {
     try {
-      const response = await fetch(`http://localhost:3000/user-status/badges`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify({ badges }),
-      });
+      const response = await fetch(
+        `https://educational-gamification-app.onrender.com/user-status/badges`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+          body: JSON.stringify({ badges }),
+        }
+      );
       if (!response.ok) {
         throw new Error("Failed to update badges");
       }
@@ -122,7 +130,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateTrophies = async (trophies) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/user-status/trophies`,
+        `https://educational-gamification-app.onrender.com/user-status/trophies`,
         {
           method: "PUT",
           headers: {

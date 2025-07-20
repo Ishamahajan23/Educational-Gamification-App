@@ -18,12 +18,15 @@ const Profile = () => {
         return;
       }
 
-      const res = await fetch("http://localhost:3000/user-status/status", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        "https://educational-gamification-app.onrender.com/user-status/status",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Failed to fetch user data");
@@ -86,7 +89,7 @@ const Profile = () => {
   const fetchUserProfile = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/profile/get-profile`,
+        `https://educational-gamification-app.onrender.com/profile/get-profile`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -118,7 +121,7 @@ const Profile = () => {
       setError("");
 
       const response = await fetch(
-        `http://localhost:3000/profile/update-profile`,
+        `https://educational-gamification-app.onrender.com/profile/update-profile`,
         {
           method: "PUT",
           headers: {

@@ -32,7 +32,7 @@ const Dashboard = () => {
       setLoading(true);
 
       const userResponse = await fetch(
-        "http://localhost:3000/user-status/status",
+        "https://educational-gamification-app.onrender.com/user-status/status",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -54,7 +54,7 @@ const Dashboard = () => {
         rank: userData.userStatus.rank,
       });
       const leaderboardResponse = await fetch(
-        "http://localhost:3000/user-status/leaderboard?limit=10",
+        "https://educational-gamification-app.onrender.com/user-status/leaderboard?limit=10",
         {
           headers: {
             "Content-Type": "application/json",

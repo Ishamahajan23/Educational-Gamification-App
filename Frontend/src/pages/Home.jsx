@@ -1,6 +1,7 @@
 import React from "react";
 import SplitText from "../../reactbits/SplitText/SplitText";
 import Loader from "../components/Loader";
+import "/src/assets/24467670_db74_5pad_220302.jpg";
 export const Home = () => {
   const [loading, setLoading] = React.useState(true);
 
