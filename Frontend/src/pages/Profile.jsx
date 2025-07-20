@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { useAuth } from "../context/AuthContext";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -46,17 +45,15 @@ const Profile = () => {
 
       setUser(userData);
 
-      // Calculate total quizzes and average score more accurately
       const totalQuizzes =
         userData.badges?.length + userData.trophies?.length || 0;
       const averageScore =
-        totalQuizzes > 0 ? Math.round(userData.points / totalQuizzes / 10) : 0; // Assuming each quiz max is ~1000 points, so divide by 10 for percentage
+        totalQuizzes > 0 ? Math.round(userData.points / totalQuizzes / 10) : 0;
 
-      // Set userStats from the user-status data
       setUserStats({
         rank: userData.rank,
         totalQuizzes: totalQuizzes,
-        averageScore: Math.min(averageScore, 100), // Cap at 100%
+        averageScore: Math.min(averageScore, 100),
         totalPoints: userData.points,
         globalRank: userData.rank,
       });
@@ -254,9 +251,7 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Details Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Personal Information */}
           <div className="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-xl">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Personal Information

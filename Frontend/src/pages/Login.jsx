@@ -35,7 +35,6 @@ const Login = () => {
 
       if (response.ok) {
         const data = await response.json();
-        // Use AuthContext login method instead of direct localStorage
         login(data.user || { email: formData.email }, data.access_token);
         navigate("/dashboard");
       } else {

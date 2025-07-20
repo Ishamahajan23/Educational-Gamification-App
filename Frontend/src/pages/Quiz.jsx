@@ -10,8 +10,7 @@ const Quiz = ({ subject = "General" }) => {
   const [loading, setLoading] = useState(true);
   const [allQuestions, setAllQuestions] = useState([]);
   const [startTime, setStartTime] = useState(null);
-  // const [isFirstWin, setIsFirstWin] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(300);
   const [timerActive, setTimerActive] = useState(false);
   const { game } = useParams();
 
@@ -52,7 +51,6 @@ const Quiz = ({ subject = "General" }) => {
     loadQuestions();
   }, [game]);
 
-  // Timer countdown effect
   useEffect(() => {
     let interval = null;
     if (timerActive && timeLeft > 0 && !showResult) {
@@ -61,7 +59,6 @@ const Quiz = ({ subject = "General" }) => {
           if (timeLeft <= 1) {
             setShowResult(true);
             setTimerActive(false);
-            // Award badges and trophies when time expires
             awardBadgesAndTrophies(score, questions.length);
             return 0;
           }
@@ -74,7 +71,6 @@ const Quiz = ({ subject = "General" }) => {
     return () => clearInterval(interval);
   }, [timerActive, timeLeft, showResult, score, questions.length]);
 
-  // Format timer display
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -151,28 +147,24 @@ const Quiz = ({ subject = "General" }) => {
     const badges = [];
     const trophies = [];
     const endTime = Date.now();
-    const timeTaken = (endTime - startTime) / 1000; // in seconds
+    const timeTaken = (endTime - startTime) / 1000;
     const scorePercentage =
       (finalScore / (totalQuestions * (game === "science" ? 20 : 10))) * 100;
 
-    // Award "First Win" badge if this is their first completed quiz
     const hasCompletedQuiz = localStorage.getItem(`completed_${game}`);
     if (!hasCompletedQuiz && scorePercentage >= 60) {
       badges.push("First Win");
       localStorage.setItem(`completed_${game}`, "true");
     }
 
-    // Award "Speed Master" badge if completed in under 30 seconds
     if (timeTaken < 30 && scorePercentage >= 80) {
       badges.push("Speed Master");
     }
 
-    // Award "Quiz Expert" badge if scored 100%
     if (scorePercentage === 100) {
       badges.push("Quiz Expert");
     }
 
-    // Award trophies based on score percentage
     if (scorePercentage >= 90) {
       trophies.push("Gold Trophy");
     } else if (scorePercentage >= 70) {
@@ -181,7 +173,6 @@ const Quiz = ({ subject = "General" }) => {
       trophies.push("Bronze Trophy");
     }
 
-    // Update badges and trophies if any were earned
     if (badges.length > 0) {
       await updateBadges(badges);
     }
@@ -219,7 +210,6 @@ const Quiz = ({ subject = "General" }) => {
     } else {
       setShowResult(true);
       setTimerActive(false);
-      // Award badges and trophies when quiz is completed
       awardBadgesAndTrophies(score, questions.length);
     }
   };

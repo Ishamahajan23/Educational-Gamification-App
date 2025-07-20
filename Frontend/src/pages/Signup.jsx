@@ -30,7 +30,7 @@ const Signup = () => {
     }
 
     setLoading(true);
-    setError(""); // Clear previous errors
+    setError(""); 
 
     try {
       const response = await fetch("http://localhost:3000/user/signup", {

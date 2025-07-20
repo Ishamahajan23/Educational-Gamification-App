@@ -14,9 +14,8 @@ const Dashboard = () => {
     fetchUserData();
   }, [navigate]);
 
-  // Refresh data when returning from quiz pages
   useEffect(() => {
-    // Check if we're returning from a quiz page
+
     if (location.state?.fromQuiz) {
       fetchUserData();
     }
@@ -32,7 +31,6 @@ const Dashboard = () => {
 
       setLoading(true);
 
-      // Fetch user status
       const userResponse = await fetch(
         "http://localhost:3000/user-status/status",
         {
@@ -55,8 +53,6 @@ const Dashboard = () => {
         trophies: userData.userStatus.trophies,
         rank: userData.userStatus.rank,
       });
-
-      // Fetch leaderboard
       const leaderboardResponse = await fetch(
         "http://localhost:3000/user-status/leaderboard?limit=10",
         {
@@ -137,7 +133,7 @@ const Dashboard = () => {
     oscillator.stop(audioContext.currentTime + 0.3);
 
     setTimeout(() => {
-      navigate(`/quiz/${game}`, { state: { fromQuiz: true } }); // Navigate to quiz page after sound
+      navigate(`/quiz/${game}`, { state: { fromQuiz: true } });
     }, 300);
   };
 

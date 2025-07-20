@@ -32,7 +32,6 @@ export const Home = () => {
   }
   return (
     <div>
-      {/* // This is the Home page component */}
       <div
         className="flex flex-col justify-center items-center text-center gap-4"
         style={{
