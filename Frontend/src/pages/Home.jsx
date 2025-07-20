@@ -2,17 +2,19 @@ import React from "react";
 import SplitText from "../../reactbits/SplitText/SplitText";
 import Loader from "../components/Loader";
 import bgImg from "/src/assets/24467670_db74_5pad_220302.jpg";
+import { Navigate } from "react-router-dom";
 
 export const Home = () => {
   const [loading, setLoading] = React.useState(true);
+  const navigate = Navigate();
 
   const handleClick = () => {
     const isAuthenticated = localStorage.getItem("token");
     if (!isAuthenticated) {
-      window.location.href = "/login";
+      navigate("/login");
       return;
     }
-    window.location.href = "/dashboard";
+    navigate("/dashboard")
 
     console.log("Quiz started!");
   };

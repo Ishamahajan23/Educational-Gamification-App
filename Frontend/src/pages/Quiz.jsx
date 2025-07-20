@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const Quiz = ({ subject = "General" }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,6 +14,7 @@ const Quiz = ({ subject = "General" }) => {
   const [timeLeft, setTimeLeft] = useState(300);
   const [timerActive, setTimerActive] = useState(false);
   const { game } = useParams();
+  const navigate = Navigate();
 
   async function fetchQuestions() {
     try {
@@ -229,7 +231,7 @@ const Quiz = ({ subject = "General" }) => {
       )
     ) {
       setTimerActive(false);
-      window.location.href = "/dashboard";
+      navigate("/dashboard");
       setCurrentQuestion(0);
       setSelectedAnswer("");
       setScore(0);
@@ -239,7 +241,7 @@ const Quiz = ({ subject = "General" }) => {
 
   const handleBackToDashboard = async () => {
     await updatePoints(score);
-    window.location.href = "/dashboard";
+    navigate("/dashboard");
   };
 
   const restartQuiz = () => {
@@ -275,7 +277,7 @@ const Quiz = ({ subject = "General" }) => {
           </p>
           <button
             className="bg-gray-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-700 transition-all duration-300"
-            onClick={() => (window.location.href = "/dashboard")}
+            onClick={() => navigate("/dashboard")}
           >
             Back to Dashboard
           </button>
