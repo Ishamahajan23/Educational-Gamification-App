@@ -57,7 +57,7 @@ function App() {
           path="/user/reset-password/:token"
           element={<ResetPassword />}
         />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </AuthProvider>
   );

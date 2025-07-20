@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import FuzzyText from "../../reactbits/FuzzyText/FuzzyText";
 
 const NotFound = () => {
-  const hoverIntensity = 0.5; 
-  const enableHover = true; 
+  const hoverIntensity = 0.5;
+  const enableHover = true;
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#B3E0EF]">
       <FuzzyText
@@ -14,9 +14,8 @@ const NotFound = () => {
       >
         404 - Page Not Found
       </FuzzyText>
-      /
     </div>
   );
-}
+};
 
-export default NotFound
+export default NotFound;
