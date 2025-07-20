@@ -1,0 +1,750 @@
+[{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154b7"
+  },
+  "id": 1,
+  "question": "Solve for x: 3x + 7 = 22",
+  "options": [
+    "3",
+    "5",
+    "7",
+    "9"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154b8"
+  },
+  "id": 2,
+  "question": "What is 25% of 80?",
+  "options": [
+    "15",
+    "20",
+    "25",
+    "30"
+  ],
+  "correct": "20",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154b9"
+  },
+  "id": 3,
+  "question": "What is the area of a rectangle with length 12 cm and width 8 cm?",
+  "options": [
+    "96 cm²",
+    "20 cm²",
+    "40 cm²",
+    "80 cm²"
+  ],
+  "correct": "96 cm²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154ba"
+  },
+  "id": 4,
+  "question": "Simplify: 3/4 + 1/8",
+  "options": [
+    "7/8",
+    "4/12",
+    "5/8",
+    "1/2"
+  ],
+  "correct": "7/8",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154bb"
+  },
+  "id": 5,
+  "question": "What is the square root of 144?",
+  "options": [
+    "11",
+    "12",
+    "13",
+    "14"
+  ],
+  "correct": "12",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154bc"
+  },
+  "id": 6,
+  "question": "If y = 2x + 3, what is y when x = 4?",
+  "options": [
+    "9",
+    "11",
+    "13",
+    "15"
+  ],
+  "correct": "11",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154bd"
+  },
+  "id": 7,
+  "question": "What is the circumference of a circle with radius 7 cm? (Use π = 22/7)",
+  "options": [
+    "44 cm",
+    "22 cm",
+    "14 cm",
+    "28 cm"
+  ],
+  "correct": "44 cm",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154be"
+  },
+  "id": 8,
+  "question": "Solve: 2x - 5 = 13",
+  "options": [
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "correct": "9",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154bf"
+  },
+  "id": 9,
+  "question": "What is 0.75 as a fraction in lowest terms?",
+  "options": [
+    "3/4",
+    "7/10",
+    "75/100",
+    "15/20"
+  ],
+  "correct": "3/4",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c0"
+  },
+  "id": 10,
+  "question": "What is the volume of a cube with side length 5 cm?",
+  "options": [
+    "25 cm³",
+    "125 cm³",
+    "75 cm³",
+    "100 cm³"
+  ],
+  "correct": "125 cm³",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c1"
+  },
+  "id": 11,
+  "question": "Factor: x² - 9",
+  "options": [
+    "(x-3)(x+3)",
+    "(x-9)(x+1)",
+    "(x-3)²",
+    "(x+3)²"
+  ],
+  "correct": "(x-3)(x+3)",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c2"
+  },
+  "id": 12,
+  "question": "What is 60% of 150?",
+  "options": [
+    "80",
+    "90",
+    "100",
+    "110"
+  ],
+  "correct": "90",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c3"
+  },
+  "id": 13,
+  "question": "What is the slope of the line passing through (2,3) and (4,7)?",
+  "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "correct": "2",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c4"
+  },
+  "id": 14,
+  "question": "Simplify: 5/6 - 1/3",
+  "options": [
+    "1/2",
+    "1/3",
+    "2/3",
+    "4/6"
+  ],
+  "correct": "1/2",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c5"
+  },
+  "id": 15,
+  "question": "What is the area of a triangle with base 10 cm and height 6 cm?",
+  "options": [
+    "30 cm²",
+    "60 cm²",
+    "16 cm²",
+    "20 cm²"
+  ],
+  "correct": "30 cm²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c6"
+  },
+  "id": 16,
+  "question": "Solve for x: x/4 = 12",
+  "options": [
+    "3",
+    "16",
+    "48",
+    "8"
+  ],
+  "correct": "48",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c7"
+  },
+  "id": 17,
+  "question": "What is (-3)²?",
+  "options": [
+    "-9",
+    "9",
+    "-6",
+    "6"
+  ],
+  "correct": "9",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c8"
+  },
+  "id": 18,
+  "question": "Convert 3/5 to a decimal",
+  "options": [
+    "0.6",
+    "0.3",
+    "0.5",
+    "0.35"
+  ],
+  "correct": "0.6",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154c9"
+  },
+  "id": 19,
+  "question": "What is the perimeter of a square with side length 9 cm?",
+  "options": [
+    "18 cm",
+    "27 cm",
+    "36 cm",
+    "81 cm"
+  ],
+  "correct": "36 cm",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154ca"
+  },
+  "id": 20,
+  "question": "Solve: 3(x + 2) = 21",
+  "options": [
+    "5",
+    "7",
+    "9",
+    "3"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154cb"
+  },
+  "id": 21,
+  "question": "What is the greatest common factor of 24 and 36?",
+  "options": [
+    "6",
+    "8",
+    "12",
+    "18"
+  ],
+  "correct": "12",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154cc"
+  },
+  "id": 22,
+  "question": "What is 2³ × 2²?",
+  "options": [
+    "2⁵",
+    "2⁶",
+    "4⁵",
+    "16"
+  ],
+  "correct": "2⁵",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154cd"
+  },
+  "id": 23,
+  "question": "What is the area of a circle with radius 3 cm? (Use π = 3.14)",
+  "options": [
+    "18.84 cm²",
+    "28.26 cm²",
+    "9.42 cm²",
+    "6.28 cm²"
+  ],
+  "correct": "28.26 cm²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154ce"
+  },
+  "id": 24,
+  "question": "Simplify: 2x + 5x",
+  "options": [
+    "7x",
+    "10x",
+    "7x²",
+    "2x²"
+  ],
+  "correct": "7x",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154cf"
+  },
+  "id": 25,
+  "question": "What is the least common multiple of 6 and 8?",
+  "options": [
+    "14",
+    "24",
+    "48",
+    "16"
+  ],
+  "correct": "24",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d0"
+  },
+  "id": 26,
+  "question": "What is 15% of 200?",
+  "options": [
+    "25",
+    "30",
+    "35",
+    "40"
+  ],
+  "correct": "30",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d1"
+  },
+  "id": 27,
+  "question": "Solve for x: 2x + 3 = x + 10",
+  "options": [
+    "5",
+    "7",
+    "8",
+    "13"
+  ],
+  "correct": "7",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d2"
+  },
+  "id": 28,
+  "question": "What is the sum of interior angles of a triangle?",
+  "options": [
+    "90°",
+    "180°",
+    "270°",
+    "360°"
+  ],
+  "correct": "180°",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d3"
+  },
+  "id": 29,
+  "question": "Evaluate: |-8|",
+  "options": [
+    "-8",
+    "8",
+    "0",
+    "16"
+  ],
+  "correct": "8",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d4"
+  },
+  "id": 30,
+  "question": "What is 4² - 3²?",
+  "options": [
+    "1",
+    "7",
+    "25",
+    "13"
+  ],
+  "correct": "7",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d5"
+  },
+  "id": 31,
+  "question": "Simplify: 3x - 2x + 5",
+  "options": [
+    "x + 5",
+    "5x",
+    "3x + 5",
+    "x - 5"
+  ],
+  "correct": "x + 5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d6"
+  },
+  "id": 32,
+  "question": "What is 7/10 as a percentage?",
+  "options": [
+    "7%",
+    "70%",
+    "0.7%",
+    "77%"
+  ],
+  "correct": "70%",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d7"
+  },
+  "id": 33,
+  "question": "What is the reciprocal of 2/3?",
+  "options": [
+    "3/2",
+    "2/3",
+    "1/3",
+    "6"
+  ],
+  "correct": "3/2",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d8"
+  },
+  "id": 34,
+  "question": "If a = 3 and b = 4, what is a² + b²?",
+  "options": [
+    "7",
+    "12",
+    "25",
+    "49"
+  ],
+  "correct": "25",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154d9"
+  },
+  "id": 35,
+  "question": "What is the median of: 5, 8, 12, 15, 20?",
+  "options": [
+    "8",
+    "12",
+    "15",
+    "10"
+  ],
+  "correct": "12",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154da"
+  },
+  "id": 36,
+  "question": "Solve: x² = 49",
+  "options": [
+    "7",
+    "±7",
+    "49",
+    "±49"
+  ],
+  "correct": "±7",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154db"
+  },
+  "id": 37,
+  "question": "What is the distance between points (0,0) and (3,4)?",
+  "options": [
+    "5",
+    "7",
+    "12",
+    "25"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154dc"
+  },
+  "id": 38,
+  "question": "Simplify: (2x)³",
+  "options": [
+    "6x³",
+    "8x³",
+    "2x³",
+    "x³"
+  ],
+  "correct": "8x³",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154dd"
+  },
+  "id": 39,
+  "question": "What is 40% of 250?",
+  "options": [
+    "90",
+    "100",
+    "110",
+    "120"
+  ],
+  "correct": "100",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154de"
+  },
+  "id": 40,
+  "question": "What is the y-intercept of y = 2x + 5?",
+  "options": [
+    "2",
+    "5",
+    "7",
+    "-5"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154df"
+  },
+  "id": 41,
+  "question": "Factor: x² + 5x + 6",
+  "options": [
+    "(x+2)(x+3)",
+    "(x+1)(x+6)",
+    "(x-2)(x-3)",
+    "(x+5)(x+1)"
+  ],
+  "correct": "(x+2)(x+3)",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e0"
+  },
+  "id": 42,
+  "question": "What is 3/8 + 1/4?",
+  "options": [
+    "5/8",
+    "4/12",
+    "1/2",
+    "7/12"
+  ],
+  "correct": "5/8",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e1"
+  },
+  "id": 43,
+  "question": "What is the surface area of a cube with side length 4 cm?",
+  "options": [
+    "64 cm²",
+    "96 cm²",
+    "48 cm²",
+    "16 cm²"
+  ],
+  "correct": "96 cm²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e2"
+  },
+  "id": 44,
+  "question": "Solve: 5x - 3 = 2x + 12",
+  "options": [
+    "3",
+    "5",
+    "7",
+    "9"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e3"
+  },
+  "id": 45,
+  "question": "What is the mode of: 3, 5, 7, 5, 9, 5, 11?",
+  "options": [
+    "5",
+    "7",
+    "9",
+    "3"
+  ],
+  "correct": "5",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e4"
+  },
+  "id": 46,
+  "question": "What is √81?",
+  "options": [
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "correct": "9",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e5"
+  },
+  "id": 47,
+  "question": "What is 0.25 as a fraction?",
+  "options": [
+    "1/4",
+    "1/2",
+    "2/5",
+    "25/100"
+  ],
+  "correct": "1/4",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e6"
+  },
+  "id": 48,
+  "question": "What is the area of a parallelogram with base 8 cm and height 5 cm?",
+  "options": [
+    "13 cm²",
+    "26 cm²",
+    "40 cm²",
+    "20 cm²"
+  ],
+  "correct": "40 cm²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e7"
+  },
+  "id": 49,
+  "question": "Simplify: 4x² - 2x²",
+  "options": [
+    "2x²",
+    "6x²",
+    "2x",
+    "4x"
+  ],
+  "correct": "2x²",
+  "subject": "Math"
+},
+{
+  "_id": {
+    "$oid": "6879fe89a9846c6ec9d154e8"
+  },
+  "id": 50,
+  "question": "What is 85% of 60?",
+  "options": [
+    "45",
+    "51",
+    "54",
+    "57"
+  ],
+  "correct": "51",
+  "subject": "Math"
+}]

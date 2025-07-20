@@ -1,0 +1,750 @@
+[{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1551f"
+  },
+  "id": 1,
+  "question": "What is the capital of France?",
+  "options": [
+    "London",
+    "Berlin",
+    "Paris",
+    "Madrid"
+  ],
+  "correct": "Paris",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15520"
+  },
+  "id": 2,
+  "question": "Which is the largest continent by area?",
+  "options": [
+    "Africa",
+    "Asia",
+    "North America",
+    "Europe"
+  ],
+  "correct": "Asia",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15521"
+  },
+  "id": 3,
+  "question": "What is the longest river in the world?",
+  "options": [
+    "Amazon",
+    "Nile",
+    "Mississippi",
+    "Yangtze"
+  ],
+  "correct": "Nile",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15522"
+  },
+  "id": 4,
+  "question": "Which mountain range contains Mount Everest?",
+  "options": [
+    "Andes",
+    "Himalayas",
+    "Rocky Mountains",
+    "Alps"
+  ],
+  "correct": "Himalayas",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15523"
+  },
+  "id": 5,
+  "question": "What is the smallest country in the world?",
+  "options": [
+    "Monaco",
+    "Vatican City",
+    "San Marino",
+    "Liechtenstein"
+  ],
+  "correct": "Vatican City",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15524"
+  },
+  "id": 6,
+  "question": "Which ocean is the largest?",
+  "options": [
+    "Atlantic",
+    "Pacific",
+    "Indian",
+    "Arctic"
+  ],
+  "correct": "Pacific",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15525"
+  },
+  "id": 7,
+  "question": "What is the capital of Australia?",
+  "options": [
+    "Sydney",
+    "Melbourne",
+    "Canberra",
+    "Perth"
+  ],
+  "correct": "Canberra",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15526"
+  },
+  "id": 8,
+  "question": "Which desert is the largest in the world?",
+  "options": [
+    "Sahara",
+    "Gobi",
+    "Kalahari",
+    "Antarctica"
+  ],
+  "correct": "Antarctica",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15527"
+  },
+  "id": 9,
+  "question": "What is the capital of Japan?",
+  "options": [
+    "Osaka",
+    "Tokyo",
+    "Kyoto",
+    "Hiroshima"
+  ],
+  "correct": "Tokyo",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15528"
+  },
+  "id": 10,
+  "question": "Which country has the most time zones?",
+  "options": [
+    "USA",
+    "Russia",
+    "China",
+    "Canada"
+  ],
+  "correct": "Russia",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15529"
+  },
+  "id": 11,
+  "question": "What is the highest waterfall in the world?",
+  "options": [
+    "Niagara Falls",
+    "Victoria Falls",
+    "Angel Falls",
+    "Iguazu Falls"
+  ],
+  "correct": "Angel Falls",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552a"
+  },
+  "id": 12,
+  "question": "Which country is known as the Land of the Rising Sun?",
+  "options": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Thailand"
+  ],
+  "correct": "Japan",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552b"
+  },
+  "id": 13,
+  "question": "What is the capital of Canada?",
+  "options": [
+    "Toronto",
+    "Vancouver",
+    "Montreal",
+    "Ottawa"
+  ],
+  "correct": "Ottawa",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552c"
+  },
+  "id": 14,
+  "question": "Which strait separates Europe and Asia?",
+  "options": [
+    "Strait of Gibraltar",
+    "Bosphorus",
+    "Strait of Hormuz",
+    "Bering Strait"
+  ],
+  "correct": "Bosphorus",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552d"
+  },
+  "id": 15,
+  "question": "What is the largest island in the world?",
+  "options": [
+    "Madagascar",
+    "Greenland",
+    "New Guinea",
+    "Borneo"
+  ],
+  "correct": "Greenland",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552e"
+  },
+  "id": 16,
+  "question": "Which country has the longest coastline?",
+  "options": [
+    "Russia",
+    "Canada",
+    "Norway",
+    "Chile"
+  ],
+  "correct": "Canada",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1552f"
+  },
+  "id": 17,
+  "question": "What is the deepest point on Earth?",
+  "options": [
+    "Mariana Trench",
+    "Puerto Rico Trench",
+    "Java Trench",
+    "Peru-Chile Trench"
+  ],
+  "correct": "Mariana Trench",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15530"
+  },
+  "id": 18,
+  "question": "Which city is known as the Big Apple?",
+  "options": [
+    "Los Angeles",
+    "Chicago",
+    "New York",
+    "Boston"
+  ],
+  "correct": "New York",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15531"
+  },
+  "id": 19,
+  "question": "What is the capital of Brazil?",
+  "options": [
+    "Rio de Janeiro",
+    "São Paulo",
+    "Brasília",
+    "Salvador"
+  ],
+  "correct": "Brasília",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15532"
+  },
+  "id": 20,
+  "question": "Which lake is the largest by surface area?",
+  "options": [
+    "Lake Superior",
+    "Caspian Sea",
+    "Lake Victoria",
+    "Lake Huron"
+  ],
+  "correct": "Caspian Sea",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15533"
+  },
+  "id": 21,
+  "question": "What is the capital of Egypt?",
+  "options": [
+    "Alexandria",
+    "Cairo",
+    "Giza",
+    "Luxor"
+  ],
+  "correct": "Cairo",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15534"
+  },
+  "id": 22,
+  "question": "Which river flows through London?",
+  "options": [
+    "Seine",
+    "Thames",
+    "Danube",
+    "Rhine"
+  ],
+  "correct": "Thames",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15535"
+  },
+  "id": 23,
+  "question": "What is the largest country in South America?",
+  "options": [
+    "Argentina",
+    "Brazil",
+    "Peru",
+    "Colombia"
+  ],
+  "correct": "Brazil",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15536"
+  },
+  "id": 24,
+  "question": "Which mountain is the highest in North America?",
+  "options": [
+    "Mount McKinley",
+    "Mount Whitney",
+    "Mount Elbert",
+    "Mount Rainier"
+  ],
+  "correct": "Mount McKinley",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15537"
+  },
+  "id": 25,
+  "question": "What is the capital of India?",
+  "options": [
+    "Mumbai",
+    "New Delhi",
+    "Kolkata",
+    "Chennai"
+  ],
+  "correct": "New Delhi",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15538"
+  },
+  "id": 26,
+  "question": "Which country is shaped like a boot?",
+  "options": [
+    "Spain",
+    "Greece",
+    "Italy",
+    "Portugal"
+  ],
+  "correct": "Italy",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15539"
+  },
+  "id": 27,
+  "question": "What is the driest desert in the world?",
+  "options": [
+    "Sahara",
+    "Atacama",
+    "Gobi",
+    "Kalahari"
+  ],
+  "correct": "Atacama",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553a"
+  },
+  "id": 28,
+  "question": "Which sea is the saltiest?",
+  "options": [
+    "Dead Sea",
+    "Red Sea",
+    "Black Sea",
+    "Mediterranean Sea"
+  ],
+  "correct": "Dead Sea",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553b"
+  },
+  "id": 29,
+  "question": "What is the capital of Russia?",
+  "options": [
+    "St. Petersburg",
+    "Moscow",
+    "Kiev",
+    "Minsk"
+  ],
+  "correct": "Moscow",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553c"
+  },
+  "id": 30,
+  "question": "Which country is known as the Land of Fire and Ice?",
+  "options": [
+    "Norway",
+    "Iceland",
+    "Finland",
+    "Greenland"
+  ],
+  "correct": "Iceland",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553d"
+  },
+  "id": 31,
+  "question": "What is the largest city in the world by population?",
+  "options": [
+    "New York",
+    "Tokyo",
+    "Mumbai",
+    "Shanghai"
+  ],
+  "correct": "Tokyo",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553e"
+  },
+  "id": 32,
+  "question": "Which river is the longest in Europe?",
+  "options": [
+    "Danube",
+    "Rhine",
+    "Volga",
+    "Thames"
+  ],
+  "correct": "Volga",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1553f"
+  },
+  "id": 33,
+  "question": "What is the capital of South Korea?",
+  "options": [
+    "Busan",
+    "Seoul",
+    "Incheon",
+    "Daegu"
+  ],
+  "correct": "Seoul",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15540"
+  },
+  "id": 34,
+  "question": "Which country has the most natural lakes?",
+  "options": [
+    "Finland",
+    "Canada",
+    "Sweden",
+    "Russia"
+  ],
+  "correct": "Canada",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15541"
+  },
+  "id": 35,
+  "question": "What is the southernmost continent?",
+  "options": [
+    "Australia",
+    "South America",
+    "Africa",
+    "Antarctica"
+  ],
+  "correct": "Antarctica",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15542"
+  },
+  "id": 36,
+  "question": "Which country is home to Machu Picchu?",
+  "options": [
+    "Chile",
+    "Peru",
+    "Bolivia",
+    "Ecuador"
+  ],
+  "correct": "Peru",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15543"
+  },
+  "id": 37,
+  "question": "What is the capital of Germany?",
+  "options": [
+    "Munich",
+    "Hamburg",
+    "Berlin",
+    "Frankfurt"
+  ],
+  "correct": "Berlin",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15544"
+  },
+  "id": 38,
+  "question": "Which ocean borders the east coast of the United States?",
+  "options": [
+    "Pacific",
+    "Atlantic",
+    "Indian",
+    "Arctic"
+  ],
+  "correct": "Atlantic",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15545"
+  },
+  "id": 39,
+  "question": "What is the largest African country by area?",
+  "options": [
+    "Libya",
+    "Chad",
+    "Niger",
+    "Algeria"
+  ],
+  "correct": "Algeria",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15546"
+  },
+  "id": 40,
+  "question": "Which city is known as the Eternal City?",
+  "options": [
+    "Athens",
+    "Rome",
+    "Paris",
+    "London"
+  ],
+  "correct": "Rome",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15547"
+  },
+  "id": 41,
+  "question": "What is the capital of Mexico?",
+  "options": [
+    "Guadalajara",
+    "Monterrey",
+    "Mexico City",
+    "Tijuana"
+  ],
+  "correct": "Mexico City",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15548"
+  },
+  "id": 42,
+  "question": "Which country is famous for its fjords?",
+  "options": [
+    "Sweden",
+    "Norway",
+    "Finland",
+    "Denmark"
+  ],
+  "correct": "Norway",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15549"
+  },
+  "id": 43,
+  "question": "What is the Great Barrier Reef located near?",
+  "options": [
+    "New Zealand",
+    "Australia",
+    "Indonesia",
+    "Philippines"
+  ],
+  "correct": "Australia",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554a"
+  },
+  "id": 44,
+  "question": "Which mountain range runs along the western coast of South America?",
+  "options": [
+    "Rockies",
+    "Andes",
+    "Himalayas",
+    "Alps"
+  ],
+  "correct": "Andes",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554b"
+  },
+  "id": 45,
+  "question": "What is the capital of Spain?",
+  "options": [
+    "Barcelona",
+    "Madrid",
+    "Seville",
+    "Valencia"
+  ],
+  "correct": "Madrid",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554c"
+  },
+  "id": 46,
+  "question": "Which country is known as the Pearl of the Orient?",
+  "options": [
+    "Thailand",
+    "Philippines",
+    "Malaysia",
+    "Singapore"
+  ],
+  "correct": "Philippines",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554d"
+  },
+  "id": 47,
+  "question": "What is the lowest point on Earth's surface?",
+  "options": [
+    "Death Valley",
+    "Dead Sea",
+    "Caspian Sea",
+    "Lake Assal"
+  ],
+  "correct": "Dead Sea",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554e"
+  },
+  "id": 48,
+  "question": "Which country has the Amazon rainforest?",
+  "options": [
+    "Colombia",
+    "Brazil",
+    "Peru",
+    "All of the above"
+  ],
+  "correct": "All of the above",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d1554f"
+  },
+  "id": 49,
+  "question": "What is the capital of the United Kingdom?",
+  "options": [
+    "Edinburgh",
+    "Cardiff",
+    "Belfast",
+    "London"
+  ],
+  "correct": "London",
+  "subject": "Geography"
+},
+{
+  "_id": {
+    "$oid": "6879fee3a9846c6ec9d15550"
+  },
+  "id": 50,
+  "question": "Which continent is known as the Dark Continent?",
+  "options": [
+    "Asia",
+    "Africa",
+    "South America",
+    "Australia"
+  ],
+  "correct": "Africa",
+  "subject": "Geography"
+}]

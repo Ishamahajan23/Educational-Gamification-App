@@ -1,0 +1,750 @@
+[{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154eb"
+  },
+  "id": 1,
+  "question": "What is the chemical symbol for gold?",
+  "options": [
+    "Go",
+    "Gd",
+    "Au",
+    "Ag"
+  ],
+  "correct": "Au",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154ec"
+  },
+  "id": 2,
+  "question": "Which planet is closest to the Sun?",
+  "options": [
+    "Venus",
+    "Mercury",
+    "Earth",
+    "Mars"
+  ],
+  "correct": "Mercury",
+  "subject": "Astronomy"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154ed"
+  },
+  "id": 3,
+  "question": "What is the powerhouse of the cell?",
+  "options": [
+    "Nucleus",
+    "Ribosome",
+    "Mitochondria",
+    "Chloroplast"
+  ],
+  "correct": "Mitochondria",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154ee"
+  },
+  "id": 4,
+  "question": "What is the speed of light in vacuum?",
+  "options": [
+    "3 × 10⁸ m/s",
+    "3 × 10⁶ m/s",
+    "3 × 10⁹ m/s",
+    "3 × 10⁷ m/s"
+  ],
+  "correct": "3 × 10⁸ m/s",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154ef"
+  },
+  "id": 5,
+  "question": "What is the pH of pure water?",
+  "options": [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "correct": "7",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f0"
+  },
+  "id": 6,
+  "question": "Which blood type is known as the universal donor?",
+  "options": [
+    "A",
+    "B",
+    "AB",
+    "O"
+  ],
+  "correct": "O",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f1"
+  },
+  "id": 7,
+  "question": "What gas makes up about 78% of Earth's atmosphere?",
+  "options": [
+    "Oxygen",
+    "Carbon dioxide",
+    "Nitrogen",
+    "Argon"
+  ],
+  "correct": "Nitrogen",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f2"
+  },
+  "id": 8,
+  "question": "What is the hardest natural substance on Earth?",
+  "options": [
+    "Gold",
+    "Iron",
+    "Diamond",
+    "Quartz"
+  ],
+  "correct": "Diamond",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f3"
+  },
+  "id": 9,
+  "question": "How many chambers does a human heart have?",
+  "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "correct": "4",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f4"
+  },
+  "id": 10,
+  "question": "What is the unit of electrical resistance?",
+  "options": [
+    "Volt",
+    "Ampere",
+    "Ohm",
+    "Watt"
+  ],
+  "correct": "Ohm",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f5"
+  },
+  "id": 11,
+  "question": "What is the most abundant gas in the universe?",
+  "options": [
+    "Oxygen",
+    "Hydrogen",
+    "Helium",
+    "Carbon"
+  ],
+  "correct": "Hydrogen",
+  "subject": "Astronomy"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f6"
+  },
+  "id": 12,
+  "question": "What is the chemical formula for table salt?",
+  "options": [
+    "NaCl",
+    "KCl",
+    "CaCl₂",
+    "MgCl₂"
+  ],
+  "correct": "NaCl",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f7"
+  },
+  "id": 13,
+  "question": "Which organelle is responsible for photosynthesis?",
+  "options": [
+    "Nucleus",
+    "Mitochondria",
+    "Chloroplast",
+    "Vacuole"
+  ],
+  "correct": "Chloroplast",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f8"
+  },
+  "id": 14,
+  "question": "What is the SI unit of force?",
+  "options": [
+    "Joule",
+    "Newton",
+    "Pascal",
+    "Watt"
+  ],
+  "correct": "Newton",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154f9"
+  },
+  "id": 15,
+  "question": "What type of rock is formed from cooled magma?",
+  "options": [
+    "Sedimentary",
+    "Metamorphic",
+    "Igneous",
+    "Composite"
+  ],
+  "correct": "Igneous",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154fa"
+  },
+  "id": 16,
+  "question": "What is the atomic number of carbon?",
+  "options": [
+    "4",
+    "6",
+    "8",
+    "12"
+  ],
+  "correct": "6",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154fb"
+  },
+  "id": 17,
+  "question": "Which part of the brain controls balance?",
+  "options": [
+    "Cerebrum",
+    "Cerebellum",
+    "Medulla",
+    "Hypothalamus"
+  ],
+  "correct": "Cerebellum",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154fc"
+  },
+  "id": 18,
+  "question": "What is the acceleration due to gravity on Earth?",
+  "options": [
+    "9.8 m/s²",
+    "10 m/s²",
+    "8.9 m/s²",
+    "11.2 m/s²"
+  ],
+  "correct": "9.8 m/s²",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154fd"
+  },
+  "id": 19,
+  "question": "What is the largest planet in our solar system?",
+  "options": [
+    "Saturn",
+    "Jupiter",
+    "Neptune",
+    "Uranus"
+  ],
+  "correct": "Jupiter",
+  "subject": "Astronomy"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154fe"
+  },
+  "id": 20,
+  "question": "What is the chemical symbol for iron?",
+  "options": [
+    "Ir",
+    "Fe",
+    "In",
+    "I"
+  ],
+  "correct": "Fe",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d154ff"
+  },
+  "id": 21,
+  "question": "What is the process by which plants make their own food?",
+  "options": [
+    "Respiration",
+    "Photosynthesis",
+    "Digestion",
+    "Fermentation"
+  ],
+  "correct": "Photosynthesis",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15500"
+  },
+  "id": 22,
+  "question": "What is the unit of electrical current?",
+  "options": [
+    "Volt",
+    "Ampere",
+    "Ohm",
+    "Watt"
+  ],
+  "correct": "Ampere",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15501"
+  },
+  "id": 23,
+  "question": "What layer of the Earth is liquid?",
+  "options": [
+    "Crust",
+    "Mantle",
+    "Outer core",
+    "Inner core"
+  ],
+  "correct": "Outer core",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15502"
+  },
+  "id": 24,
+  "question": "What is the most reactive metal?",
+  "options": [
+    "Sodium",
+    "Potassium",
+    "Francium",
+    "Cesium"
+  ],
+  "correct": "Francium",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15503"
+  },
+  "id": 25,
+  "question": "What is the largest organ in the human body?",
+  "options": [
+    "Liver",
+    "Brain",
+    "Lungs",
+    "Skin"
+  ],
+  "correct": "Skin",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15504"
+  },
+  "id": 26,
+  "question": "What is the formula for kinetic energy?",
+  "options": [
+    "KE = mv²",
+    "KE = ½mv²",
+    "KE = m²v",
+    "KE = 2mv²"
+  ],
+  "correct": "KE = ½mv²",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15505"
+  },
+  "id": 27,
+  "question": "How many bones are in an adult human body?",
+  "options": [
+    "206",
+    "208",
+    "210",
+    "212"
+  ],
+  "correct": "206",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15506"
+  },
+  "id": 28,
+  "question": "What is the chemical formula for water?",
+  "options": [
+    "H₂O",
+    "HO₂",
+    "H₃O",
+    "H₂O₂"
+  ],
+  "correct": "H₂O",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15507"
+  },
+  "id": 29,
+  "question": "What causes the seasons on Earth?",
+  "options": [
+    "Distance from Sun",
+    "Earth's tilt",
+    "Solar flares",
+    "Moon phases"
+  ],
+  "correct": "Earth's tilt",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15508"
+  },
+  "id": 30,
+  "question": "What is the unit of power?",
+  "options": [
+    "Joule",
+    "Newton",
+    "Watt",
+    "Pascal"
+  ],
+  "correct": "Watt",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15509"
+  },
+  "id": 31,
+  "question": "What is the chemical symbol for sodium?",
+  "options": [
+    "So",
+    "S",
+    "Na",
+    "Sm"
+  ],
+  "correct": "Na",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550a"
+  },
+  "id": 32,
+  "question": "What is the smallest unit of life?",
+  "options": [
+    "Atom",
+    "Molecule",
+    "Cell",
+    "Tissue"
+  ],
+  "correct": "Cell",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550b"
+  },
+  "id": 33,
+  "question": "What is the boiling point of water at sea level?",
+  "options": [
+    "90°C",
+    "100°C",
+    "110°C",
+    "120°C"
+  ],
+  "correct": "100°C",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550c"
+  },
+  "id": 34,
+  "question": "What type of wave is sound?",
+  "options": [
+    "Electromagnetic",
+    "Longitudinal",
+    "Transverse",
+    "Surface"
+  ],
+  "correct": "Longitudinal",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550d"
+  },
+  "id": 35,
+  "question": "What is the study of earthquakes called?",
+  "options": [
+    "Geology",
+    "Seismology",
+    "Meteorology",
+    "Volcanology"
+  ],
+  "correct": "Seismology",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550e"
+  },
+  "id": 36,
+  "question": "What is the main component of the Sun?",
+  "options": [
+    "Helium",
+    "Hydrogen",
+    "Carbon",
+    "Oxygen"
+  ],
+  "correct": "Hydrogen",
+  "subject": "Astronomy"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1550f"
+  },
+  "id": 37,
+  "question": "What is the process of cell division called?",
+  "options": [
+    "Mitosis",
+    "Meiosis",
+    "Both A and B",
+    "Osmosis"
+  ],
+  "correct": "Both A and B",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15510"
+  },
+  "id": 38,
+  "question": "What is the chemical formula for carbon dioxide?",
+  "options": [
+    "CO",
+    "CO₂",
+    "C₂O",
+    "C₂O₂"
+  ],
+  "correct": "CO₂",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15511"
+  },
+  "id": 39,
+  "question": "What is the unit of frequency?",
+  "options": [
+    "Hertz",
+    "Joule",
+    "Newton",
+    "Watt"
+  ],
+  "correct": "Hertz",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15512"
+  },
+  "id": 40,
+  "question": "What is the hardest part of the human body?",
+  "options": [
+    "Bone",
+    "Tooth enamel",
+    "Nail",
+    "Cartilage"
+  ],
+  "correct": "Tooth enamel",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15513"
+  },
+  "id": 41,
+  "question": "What is the most common element in the Earth's crust?",
+  "options": [
+    "Silicon",
+    "Oxygen",
+    "Aluminum",
+    "Iron"
+  ],
+  "correct": "Oxygen",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15514"
+  },
+  "id": 42,
+  "question": "What is the chemical symbol for helium?",
+  "options": [
+    "H",
+    "He",
+    "Hl",
+    "Ho"
+  ],
+  "correct": "He",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15515"
+  },
+  "id": 43,
+  "question": "What is the normal human body temperature?",
+  "options": [
+    "36°C",
+    "37°C",
+    "38°C",
+    "39°C"
+  ],
+  "correct": "37°C",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15516"
+  },
+  "id": 44,
+  "question": "What is the first law of thermodynamics?",
+  "options": [
+    "Energy cannot be created or destroyed",
+    "Entropy always increases",
+    "Heat flows from hot to cold",
+    "Work equals force times distance"
+  ],
+  "correct": "Energy cannot be created or destroyed",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15517"
+  },
+  "id": 45,
+  "question": "What is the smallest planet in our solar system?",
+  "options": [
+    "Mercury",
+    "Mars",
+    "Venus",
+    "Pluto"
+  ],
+  "correct": "Mercury",
+  "subject": "Astronomy"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15518"
+  },
+  "id": 46,
+  "question": "What is the chemical formula for methane?",
+  "options": [
+    "CH₄",
+    "C₂H₆",
+    "C₃H₈",
+    "C₄H₁₀"
+  ],
+  "correct": "CH₄",
+  "subject": "Chemistry"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d15519"
+  },
+  "id": 47,
+  "question": "What is the longest bone in the human body?",
+  "options": [
+    "Tibia",
+    "Fibula",
+    "Femur",
+    "Humerus"
+  ],
+  "correct": "Femur",
+  "subject": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1551a"
+  },
+  "id": 48,
+  "question": "What is the unit of electric charge?",
+  "options": [
+    "Ampere",
+    "Volt",
+    "Coulomb",
+    "Ohm"
+  ],
+  "correct": "Coulomb",
+  "subject": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1551b"
+  },
+  "id": 49,
+  "question": "What scale is used to measure earthquake intensity?",
+  "options": [
+    "Richter scale",
+    "Beaufort scale",
+    "Kelvin scale",
+    "Celsius scale"
+  ],
+  "correct": "Richter scale",
+  "subject": "Earth Science"
+},
+{
+  "_id": {
+    "$oid": "6879feb2a9846c6ec9d1551c"
+  },
+  "id": 50,
+  "question": "What is the process by which liquid water becomes water vapor?",
+  "options": [
+    "Condensation",
+    "Evaporation",
+    "Precipitation",
+    "Sublimation"
+  ],
+  "correct": "Evaporation",
+  "subject": "Chemistry"
+}]
