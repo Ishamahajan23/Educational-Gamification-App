@@ -1,12 +1,12 @@
 import React from "react";
 import SplitText from "../../reactbits/SplitText/SplitText";
 import Loader from "../components/Loader";
-import "/src/assets/24467670_db74_5pad_220302.jpg";
+import bgImg from "/src/assets/24467670_db74_5pad_220302.jpg";
+
 export const Home = () => {
   const [loading, setLoading] = React.useState(true);
 
   const handleClick = () => {
-
     const isAuthenticated = localStorage.getItem("token");
     if (!isAuthenticated) {
       window.location.href = "/login";
@@ -15,13 +15,12 @@ export const Home = () => {
     window.location.href = "/dashboard";
 
     console.log("Quiz started!");
-  }
+  };
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
 
   React.useEffect(() => {
-
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -37,7 +36,7 @@ export const Home = () => {
         className="flex flex-col justify-center items-center text-center gap-4"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('/src/assets/24467670_db74_5pad_220302.jpg')",
+            `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(${bgImg})`,
           backgroundRepeat: "no-repeat",
           height: "93vh",
           backgroundSize: "cover",
@@ -77,7 +76,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
