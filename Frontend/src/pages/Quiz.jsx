@@ -84,7 +84,7 @@ const Quiz = ({ subject = "General" }) => {
   const updatePoints = async (newScore) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/points`,
+        `https://educational-gamification-app.onrender.com/user-status/points`,
         {
           method: "PUT",
           headers: {
@@ -108,7 +108,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateBadges = async (badges) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/badges`,
+        `https://educational-gamification-app.onrender.com/user-status/badges`,
         {
           method: "PUT",
           headers: {
@@ -132,7 +132,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateTrophies = async (trophies) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/trophies`,
+        `https://educational-gamification-app.onrender.com/user-status/trophies`,
         {
           method: "PUT",
           headers: {
