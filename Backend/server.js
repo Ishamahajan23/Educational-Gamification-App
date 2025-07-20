@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const userRoute = require("./routes/user.route");
 const userStatusRoute = require("./routes/userStatus.route");
-const quizRoute = require("./routes/Quize.route");
+const quizRoute = require("./routes/quize.route");
 const profileRoute = require("./routes/profile.routes");
 
 
