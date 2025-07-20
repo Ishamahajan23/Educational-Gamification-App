@@ -134,7 +134,7 @@ const Dashboard = () => {
     oscillator.stop(audioContext.currentTime + 0.3);
 
     setTimeout(() => {
-      navigate(`/${game}`, { state: { fromQuiz: true } });
+      navigate(`/quiz/${game}`, { state: { fromQuiz: true } });
     }, 300);
   };
 

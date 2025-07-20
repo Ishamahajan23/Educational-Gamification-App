@@ -18,7 +18,7 @@ const Quiz = ({ subject = "General" }) => {
   async function fetchQuestions() {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/${game}`
+        `https://educational-gamification-app.onrender.com/quiz/${game}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch questions");
@@ -83,7 +83,7 @@ const Quiz = ({ subject = "General" }) => {
   const updatePoints = async (newScore) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/points`,
+        `https://educational-gamification-app.onrender.com/quiz/points`,
         {
           method: "PUT",
           headers: {
@@ -107,7 +107,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateBadges = async (badges) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/badges`,
+        `https://educational-gamification-app.onrender.com/quiz/badges`,
         {
           method: "PUT",
           headers: {
@@ -131,7 +131,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateTrophies = async (trophies) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/trophies`,
+        `https://educational-gamification-app.onrender.com/quiz/trophies`,
         {
           method: "PUT",
           headers: {
