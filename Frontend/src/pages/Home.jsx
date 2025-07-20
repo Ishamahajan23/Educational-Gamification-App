@@ -50,7 +50,7 @@ export const Home = () => {
           <h1 className="text-4xl text-[#8B5C1B] font-bold font-mono">
             <SplitText
               text="Let's The Game Begin"
-              className="text-4xl font-semibold text-center"
+              className="md:text-4xl  text-3xl font-semibold text-center"
               delay={100}
               duration={0.6}
               ease="power3.out"
