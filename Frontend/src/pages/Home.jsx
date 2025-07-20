@@ -45,7 +45,7 @@ export const Home = () => {
           width: "100%",
         }}
       >
-        <div className="w-1/2 p-10 bg-[#B3E0EF] bg-opacity-80 rounded-lg shadow-lg flex flex-col items-center gap-4">
+        <div className="md:w-1/2 m-3 p-10 bg-[#B3E0EF] bg-opacity-80 rounded-lg shadow-lg flex flex-col items-center gap-4">
           <small className="text-black">Let's The Game Begin</small>
           <h1 className="text-4xl text-[#8B5C1B] font-bold font-mono">
             <SplitText
