@@ -13,6 +13,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Setting from "./pages/Setting";
 import Profile from "./pages/Profile";
 import ResetPassword from "./pages/ResetPassword";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </AuthProvider>
   );
 }
