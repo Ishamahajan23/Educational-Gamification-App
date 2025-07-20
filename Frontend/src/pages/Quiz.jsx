@@ -84,7 +84,7 @@ const Quiz = ({ subject = "General" }) => {
   const updatePoints = async (newScore) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/quiz/points`,
+        `https://educational-gamification-app.onrender.com/points`,
         {
           method: "PUT",
           headers: {
@@ -108,7 +108,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateBadges = async (badges) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/quiz/badges`,
+        `https://educational-gamification-app.onrender.com/badges`,
         {
           method: "PUT",
           headers: {
@@ -132,7 +132,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateTrophies = async (trophies) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/quiz/trophies`,
+        `https://educational-gamification-app.onrender.com/trophies`,
         {
           method: "PUT",
           headers: {
@@ -258,14 +258,14 @@ const Quiz = ({ subject = "General" }) => {
   if (loading) {
     return (
       <div className="max-w-4xl mx-auto p-5 bg-blue-100 min-h-screen font-sans">
-        
+        <Loader />
       </div>
     );
   }
 
   if (questions.length === 0) {
     return (
-      <div className="max-w-4xl mx-auto p-5 bg-blue-100 min-h-screen font-sans">
+      <div className="w-full mx-auto bg-blue-100 font-sans md:p-2.5 min-h-screen bg-gradient-to-br from-[#B3E0EF] to-[#E8F4F8] p-6">
         <div className="bg-white rounded-2xl p-10 text-center shadow-lg">
           <h2 className="text-orange-600 mb-8 text-4xl font-bold">
             No Questions Available
@@ -286,7 +286,7 @@ const Quiz = ({ subject = "General" }) => {
 
   if (showResult) {
     return (
-      <div className="max-w-4xl mx-auto p-5 bg-blue-100 min-h-screen font-sans">
+      <div className="w-full mx-auto bg-blue-100 font-sans md:p-2.5 min-h-screen bg-gradient-to-br from-[#B3E0EF] to-[#E8F4F8] p-6">
         <div className="bg-white rounded-2xl p-10 text-center shadow-lg">
           <h2 className="text-orange-600 mb-8 text-4xl font-bold">
             Quiz Complete!
