@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Loader from "../components/Loader";
 
 const Quiz = ({ subject = "General" }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -17,17 +18,39 @@ const Quiz = ({ subject = "General" }) => {
 
   async function fetchQuestions() {
     try {
+      console.log(`Fetching questions for game: ${game}`); // Debug log
       const response = await fetch(
         `https://educational-gamification-app.onrender.com/quiz/${game}`
       );
+
+      console.log(`Response status: ${response.status}`); // Debug log
+
       if (!response.ok) {
-        throw new Error("Failed to fetch questions");
+        throw new Error(
+          `Failed to fetch questions: ${response.status} ${response.statusText}`
+        );
       }
+
       const data = await response.json();
-      console.log(data.quizzes);
-      return data.quizzes || [];
+      console.log("Full API response:", data); // Debug log
+
+      // Try different possible response structures
+      let questions = [];
+      if (data.quizzes && Array.isArray(data.quizzes)) {
+        questions = data.quizzes;
+      } else if (data.questions && Array.isArray(data.questions)) {
+        questions = data.questions;
+      } else if (Array.isArray(data)) {
+        questions = data;
+      }
+
+      console.log("Extracted questions:", questions); // Debug log
+      console.log("Questions count:", questions.length); // Debug log
+
+      return questions;
     } catch (error) {
       console.error("Error fetching questions:", error);
+      console.error("Error details:", error.message); // More detailed error logging
       return [];
     }
   }
@@ -40,18 +63,32 @@ const Quiz = ({ subject = "General" }) => {
 
   useEffect(() => {
     const loadQuestions = async () => {
+      console.log("Starting to load questions..."); // Debug log
       const fetchedQuestions = await fetchQuestions();
+      console.log("Fetched questions result:", fetchedQuestions); // Debug log
+
       if (fetchedQuestions.length === 0) {
+        console.log("No questions received from API"); // Debug log
         setLoading(false);
         return;
       }
+
       setAllQuestions(fetchedQuestions);
-      setQuestions(getRandomQuestions(fetchedQuestions));
+      const randomQuestions = getRandomQuestions(fetchedQuestions);
+      console.log("Random questions selected:", randomQuestions); // Debug log
+      setQuestions(randomQuestions);
       setStartTime(Date.now());
       setTimerActive(true);
       setLoading(false);
     };
-    loadQuestions();
+
+    if (game) {
+      // Only load if game parameter exists
+      loadQuestions();
+    } else {
+      console.error("No game parameter found");
+      setLoading(false);
+    }
   }, [game]);
 
   useEffect(() => {
@@ -257,14 +294,12 @@ const Quiz = ({ subject = "General" }) => {
   if (loading) {
     return (
       <div className="max-w-4xl mx-auto p-5 bg-blue-100 min-h-screen font-sans">
-        <div className="text-center text-2xl text-orange-600 py-12">
-          Loading quiz...
-        </div>
+        <Loader />
       </div>
     );
   }
 
-  if (questions.length === 0) {
+  if (questions.length === 0 && !loading) {
     return (
       <div className="max-w-4xl mx-auto p-5 bg-blue-100 min-h-screen font-sans">
         <div className="bg-white rounded-2xl p-10 text-center shadow-lg">
@@ -272,7 +307,10 @@ const Quiz = ({ subject = "General" }) => {
             No Questions Available
           </h2>
           <p className="text-gray-600 mb-8">
-            Sorry, no questions are available for this quiz category.
+            Sorry, no questions are available for this quiz category: {game}
+          </p>
+          <p className="text-sm text-gray-500 mb-8">
+            Please check the browser console for error details.
           </p>
           <button
             className="bg-gray-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-700 transition-all duration-300"
