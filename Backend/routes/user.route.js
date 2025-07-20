@@ -112,7 +112,8 @@ userRoute.post("/forgot-password", async (req, res) => {
       },
     });
     const resetURL = `${
-      process.env.FRONTEND_URL || "http://localhost:5173"
+      process.env.FRONTEND_URL ||
+      "https://educational-gamification-app.onrender.com"
     }/user/reset-password/${resetToken}`;
 
     const mailOptions = {
