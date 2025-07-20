@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const quizRoute = express.Router();
-const MathQuizModel = require("../model/mathQuiz.model");
+const MathQuizModel = require("../model/mathquiz.model");
 const ScienceQuizModel = require("../model/sciencequiz.model");
 const GeographyQuizModel = require("../model/geographyquiz.model");
 
