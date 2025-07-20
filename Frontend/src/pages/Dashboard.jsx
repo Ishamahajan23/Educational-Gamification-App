@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import SpotlightCard from "../../reactbits/SpotlightCard/SpotlightCard"
+import Loader from "../components/Loader";
 
 const Dashboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
@@ -87,7 +88,7 @@ const Dashboard = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-[#B3E0EF] to-[#E8F4F8] flex items-center justify-center">
-        <div className="text-2xl font-semibold text-[#8B5C1B]">Loading...</div>
+        <Loader />
       </div>
     );
   }

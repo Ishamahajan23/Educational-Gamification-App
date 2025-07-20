@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Loader from "../components/Loader";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -71,7 +72,6 @@ const Profile = () => {
       setLoading(false);
     } catch (error) {
       console.error("Error fetching user data:", error);
-      setError("Failed to load user data");
       setLoading(false);
     }
   };
@@ -165,8 +165,8 @@ const Profile = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#B3E0EF] flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white"></div>
+      <div className="min-h-screen bg-gradient-to-b from-[#B3E0EF] to-[#C97E2A] flex items-center justify-center">
+        <Loader />
       </div>
     );
   }
