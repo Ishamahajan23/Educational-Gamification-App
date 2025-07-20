@@ -51,11 +51,11 @@ const Login = () => {
   };
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
+    <Box sx={{ display: "flex", justifyContent: "center", mt: 4, p: 2, height:"80vh" }}>
       {loading ? (
         <Loader />
       ) : (
-        <Paper sx={{ p: 4, width: 400 }}>
+        <Paper sx={{ p: 4, width: 400, borderRadius: 2 , height:"60vh"}}>
           <Typography variant="h4" gutterBottom>
             Login
           </Typography>

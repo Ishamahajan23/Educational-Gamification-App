@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Quiz = ({ subject = "General" }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -14,12 +13,12 @@ const Quiz = ({ subject = "General" }) => {
   const [timeLeft, setTimeLeft] = useState(300);
   const [timerActive, setTimerActive] = useState(false);
   const { game } = useParams();
-  const navigate = Navigate();
+  const navigate = useNavigate();
 
   async function fetchQuestions() {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/quiz/${game}`
+        `https://educational-gamification-app.onrender.com/${game}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch questions");
@@ -84,7 +83,7 @@ const Quiz = ({ subject = "General" }) => {
   const updatePoints = async (newScore) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/user-status/points`,
+        `https://educational-gamification-app.onrender.com/points`,
         {
           method: "PUT",
           headers: {
@@ -108,7 +107,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateBadges = async (badges) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/user-status/badges`,
+        `https://educational-gamification-app.onrender.com/badges`,
         {
           method: "PUT",
           headers: {
@@ -132,7 +131,7 @@ const Quiz = ({ subject = "General" }) => {
   const updateTrophies = async (trophies) => {
     try {
       const response = await fetch(
-        `https://educational-gamification-app.onrender.com/user-status/trophies`,
+        `https://educational-gamification-app.onrender.com/trophies`,
         {
           method: "PUT",
           headers: {
