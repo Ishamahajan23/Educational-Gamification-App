@@ -73,9 +73,9 @@ Educational-Gamification-App/
 
 ```bash
 cd backend
-npm install
+npm init -y
 cp .env.example .env
-npm run dev
+node server.js
 ```
 
 ### Frontend Setup
@@ -84,13 +84,7 @@ npm run dev
 cd frontend
 npm install
 cp .env.example .env.local
-npm start
-```
-
-### Database Setup
-
-```bash
-npm run seed
+npm run dev
 ```
 
 ## Usage
