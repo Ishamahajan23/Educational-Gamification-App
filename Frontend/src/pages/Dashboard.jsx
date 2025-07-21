@@ -141,7 +141,7 @@ const Dashboard = () => {
   return (
     <SpotlightCard className="custom-spotlight-card" spotlightColor="#C97E2A">
   
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 md:flex-row flex-col ">
           <h1 className="text-4xl font-bold text-[#8B5C1B] text-center flex-1">
             🎮 Game Dashboard
           </h1>

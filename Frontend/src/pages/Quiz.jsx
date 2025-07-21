@@ -240,7 +240,6 @@ const Quiz = ({ subject = "General" }) => {
   };
 
   const handleBackToDashboard = async () => {
-    await updatePoints(score);
     navigate("/dashboard");
   };
 
