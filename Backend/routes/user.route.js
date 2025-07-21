@@ -108,9 +108,11 @@ userRoute.post("/forgot-password", async (req, res) => {
         pass: process.env.APP_PASS,
       },
     });
-    const resetURL = `${
+    const baseURL =
       process.env.FRONTEND_URL ||
-      "https://educational-gamification-app-1.onrender.com"
+      "https://educational-gamification-app-1.onrender.com";
+    const resetURL = `${
+      baseURL.endsWith("/") ? baseURL.slice(0, -1) : baseURL
     }/reset-password/${resetToken}`;
 
     const mailOptions = {
