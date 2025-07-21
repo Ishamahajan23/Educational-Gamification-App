@@ -37,7 +37,7 @@ const ResetPassword = () => {
 
     try {
       const response = await fetch(
-        `https://educational-gamification-app-1.onrender.com/reset-password/${token}`,
+        `https://educational-gamification-app-1.onrender.com/user/reset-password/${token}`,
         {
           method: "POST",
           headers: {
@@ -59,6 +59,7 @@ const ResetPassword = () => {
       }
     } catch (err) {
       setError("An error occurred. Please try again.");
+      console.error("Reset password error:", err);
     }
     setLoading(false);
   };

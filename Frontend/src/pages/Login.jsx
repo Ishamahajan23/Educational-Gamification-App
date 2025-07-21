@@ -29,7 +29,7 @@ const Login = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://educational-gamification-app.onrender.com/user/login",
+        "https://educational-gamification-app-1.onrender.com/user/login",
         {
           method: "POST",
           headers: {
@@ -48,7 +48,7 @@ const Login = () => {
       }
       setLoading(false);
     } catch (err) {
-      setError("An error occurred. Please try again.", err);
+      setError("An error occurred. Please try again.");
       setLoading(false);
     }
   };
@@ -61,7 +61,7 @@ const Login = () => {
 
     try {
       const response = await fetch(
-        "https://educational-gamification-app.onrender.com/user/forgot-password",
+        "https://educational-gamification-app-1.onrender.com/user/forgot-password",
         {
           method: "POST",
           headers: {
@@ -81,7 +81,7 @@ const Login = () => {
         );
       }
     } catch (err) {
-      setError("An error occurred. Please try again.",err);
+      setError("An error occurred. Please try again.");
     }
     setLoading(false);
   };
