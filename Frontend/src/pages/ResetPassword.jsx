@@ -37,7 +37,7 @@ const ResetPassword = () => {
 
     try {
       const response = await fetch(
-        `https://educational-gamification-app-1.onrender.com/user/reset-password/${token}`,
+        `https://educational-gamification-app-1.onrender.com/reset-password/${token}`,
         {
           method: "POST",
           headers: {
