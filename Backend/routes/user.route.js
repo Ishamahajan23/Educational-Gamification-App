@@ -47,7 +47,6 @@ userRoute.post("/login", async (req, res) => {
       });
     }
 
-
     let user = await userModel.findOne({ email });
     if (!user) {
       return res.status(404).json({
@@ -81,8 +80,6 @@ userRoute.post("/login", async (req, res) => {
   }
 });
 
-
-
 userRoute.post("/forgot-password", async (req, res) => {
   try {
     const { email } = req.body;
@@ -113,8 +110,8 @@ userRoute.post("/forgot-password", async (req, res) => {
     });
     const resetURL = `${
       process.env.FRONTEND_URL ||
-      "https://educational-gamification-app.onrender.com"
-    }/user/reset-password/${resetToken}`;
+      "https://educational-gamification-app-1.onrender.com"
+    }/reset-password/${resetToken}`;
 
     const mailOptions = {
       from: "ishamahajan933@gmail.com",
