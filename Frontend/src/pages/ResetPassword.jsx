@@ -1,23 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import {
+  Box,
+  TextField,
+  Button,
+  Typography,
+  Paper,
+  Alert,
+} from "@mui/material";
+import Loader from "../components/Loader";
 
 const ResetPassword = () => {
-  const { token } = useParams();
-  const navigate = useNavigate();
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const { token } = useParams();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!token) {
-      setError("Invalid reset link. Please request a new password reset.");
-    }
-  }, [token]);
-
-  const handleResetPassword = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
 
     if (newPassword !== confirmPassword) {
       setError("Passwords do not match");
@@ -30,8 +34,6 @@ const ResetPassword = () => {
     }
 
     setLoading(true);
-    setError("");
-    setMessage("");
 
     try {
       const response = await fetch(
@@ -48,99 +50,113 @@ const ResetPassword = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage("Password reset successful! Redirecting to login...");
-        setNewPassword("");
-        setConfirmPassword("");
+        setSuccess(true);
         setTimeout(() => {
           navigate("/login");
-        }, 2000);
+        }, 3000);
       } else {
-        setError(data.message || "Failed to reset password");
+        setError(data.message || "Failed to reset password. Please try again.");
       }
     } catch (err) {
-      setError("Network error. Please try again.", err);
-    } finally {
-      setLoading(false);
+      setError("An error occurred. Please try again.",err);
     }
+    setLoading(false);
   };
 
+  if (success) {
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          mt: 4,
+          p: 2,
+          height: "80vh",
+        }}
+      >
+        <Paper sx={{ p: 4, width: 400, borderRadius: 2, textAlign: "center" }}>
+          <Alert severity="success" sx={{ mb: 2 }}>
+            Password reset successful!
+          </Alert>
+          <Typography variant="body1" gutterBottom>
+            Your password has been successfully reset.
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Redirecting to login page in 3 seconds...
+          </Typography>
+          <Button
+            component={Link}
+            to="/login"
+            variant="contained"
+            sx={{ mt: 2 }}
+            style={{ backgroundColor: "#C97E2A", color: "white" }}
+          >
+            Go to Login
+          </Button>
+        </Paper>
+      </Box>
+    );
+  }
+
   return (
-    <div
-      style={{
-        backgroundColor: "#B3E0EF",
-        minHeight: "100vh",
-        padding: "20px",
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        mt: 4,
+        p: 2,
+        height: "80vh",
       }}
     >
-      <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-gray-50 px-6 py-4 border-b">
-          <h1 className="text-2xl font-bold text-gray-800">Reset Password</h1>
-        </div>
-
-        <div className="p-6">
-          {message && (
-            <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-              {message}
-            </div>
-          )}
+      {loading ? (
+        <Loader />
+      ) : (
+        <Paper sx={{ p: 4, width: 400, borderRadius: 2 }}>
+          <Typography variant="h4" gutterBottom>
+            Reset Password
+          </Typography>
           {error && (
-            <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+            <Alert severity="error" sx={{ mb: 2 }}>
               {error}
-            </div>
+            </Alert>
           )}
-
-          {!error && token && (
-            <form onSubmit={handleResetPassword} className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  New Password
-                </label>
-                <input
-                  type="password"
-                  value={newPassword}
-                  onChange={(e) => setNewPassword(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter new password"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Confirm New Password
-                </label>
-                <input
-                  type="password"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Confirm new password"
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 disabled:opacity-50 transition duration-200"
-              >
-                {loading ? "Resetting..." : "Reset Password"}
-              </button>
-            </form>
-          )}
-
-          {!token && (
-            <div className="text-center">
-              <p className="text-gray-600 mb-4">Invalid reset link</p>
-              <button
-                onClick={() => navigate("/settings")}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-              >
-                Request New Reset Link
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              fullWidth
+              label="New Password"
+              name="newPassword"
+              type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              margin="normal"
+              required
+            />
+            <TextField
+              fullWidth
+              label="Confirm New Password"
+              name="confirmPassword"
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              margin="normal"
+              required
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+              style={{ backgroundColor: "#C97E2A", color: "white" }}
+            >
+              Reset Password
+            </Button>
+            <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+              Remember your password? <Link to="/login">Back to Login</Link>
+            </Typography>
+          </form>
+        </Paper>
+      )}
+    </Box>
   );
 };
 
