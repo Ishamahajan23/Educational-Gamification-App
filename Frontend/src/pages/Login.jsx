@@ -29,7 +29,7 @@ const Login = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://educational-gamification-app-1.onrender.com/user/login",
+        "https://educational-gamification-app.onrender.com/user/login",
         {
           method: "POST",
           headers: {
